@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap");
+
+:root {
+  --primary: #f46500;
+  --secondary: #264301;
+}
+* {
+  font-family: Manrope;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  gap: 17rem;
+}
+.left-container {
+  height: 90%;
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 7rem;
+}
+
+.img-container {
+  height: 50%;
+  width: 50%;
+  margin-left: 5%;
+  background: url("https://s3-alpha-sig.figma.com/img/316f/edf8/48ba0a8f18eb3b627dc3af5cf10d06f5?Expires=1691971200&Signature=dFqpPGTewNrm-BRIitou1qDUSy4VMpOjpRPhgjLx~jWIBVLdb7f4SKBKnW6N252~MyT7MZobEh0PJBJLrYHnyN64KmyIDMAh7V1JnaSXsmlIHAJW0d7efV3JY8hcDOrUC1TUS6nUnqS3YDy0yXw5ZC9abP0WISuh6OmWEhY1-z5bX~R7Kz7~DoXJp-fXO9ghPSlWtsDXMs9TpYVjPQlc6rl1hD9MVpUIyZoeSBlsTStNrWBoX0XEPaVcdlmvS-uiiViozaxIqmNV8gGM5-Ya4en5-tXqmp6JrgDPVAd8-7Gs9ueB6yTvvIgJD~Y3jUSJP4HyzbKDKLUAaD~vR-hqbA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.circle {
+  background-color: #f46500;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  right: -70px;
+  bottom: 18%;
+}
+.circle-2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: #f5f0f6;
+  right: -15px;
+  bottom: 10%;
+}
+.circle-3 {
+  width: 4rem;
+  height: 4rem;
+  background-color: #f46500;
+  right: 7%;
+  bottom: 4%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  width: 70%;
+  height: 100%;
+}
+
+#signup-form {
+  margin: 1% auto;
+}
+
+input {
+  color: #000 !important;
+}
+
+.form p {
+  margin-inline: auto;
+}
+.form input,
+.h6 {
+  padding: 0.5rem;
+  margin-bottom: 1.8rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  border: 1px solid darkgray;
+  padding: 0.8rem;
+}
+.inputs input,
+.social-btn button,
+#login {
+  border-radius: 10px;
+  width: 70%;
+  color: #fff;
+  font-size: 1rem;
+}
+#signup-btn {
+  padding: 0.7rem 0.5rem;
+  width: 70%;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+.form input:focus {
+  outline: 1px solid var(--primary);
+}
+
+.form button {
+  height: 3rem;
+}
+.btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+}
+
+.form-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 70%;
+}
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#or {
+  margin-bottom: 1rem;
+}
+
+.social-btn button {
+  margin-bottom: 2rem;
+  display: flex;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.btn .btn-primary {
+  background-color: var(--primary);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--primary);
+  border: 1px solid #f46500;
+}
+
+.btn svg {
+  margin-right: 1rem;
+}
+.link-opacity-100 {
+  color: var(--secondary);
+}
+
+/* @media screen and (max-width: 438px) {
+  html {
+    overflow-y: scroll;
+  }
+  main {
+    display: block;
+  }
+  .left-container {
+    display: none;
+  }
+  form {
+    background-color: green;
+    height: 50px;
+    border: 1px solid blue;
+  }
+  .form input {
+    width: 95%;
+  }
+} */
